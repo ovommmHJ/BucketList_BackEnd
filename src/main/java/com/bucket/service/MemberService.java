@@ -24,4 +24,9 @@ public class MemberService {
         return list;
     }
 
+    public Member checkMember(String id, String pw) {
+//       return memberRepo.findByidAndpw(id,pw);
+        Member member = new Member();
+        return member;
+    }
 }

@@ -32,8 +32,8 @@ public class BucketController {
     }
 
     @GetMapping(value="/list/pick")
-    public List<Bucket> bucket_pick_list(HttpServletRequest request){
-        List<Bucket> list = BucketSer.getPickBucketList(request);
+    public List<Bucket> bucket_own_list(HttpServletRequest request){
+        List<Bucket> list = BucketSer.getOwnBucketList(request);
         return list;
     }
 
